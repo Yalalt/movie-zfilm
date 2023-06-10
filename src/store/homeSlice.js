@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const counterSlice = createSlice({
+export const homeSlice = createSlice({
   name: "home",
   initialState: {
     url: {},
@@ -16,4 +16,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+/*** Action creators generated for each case reducer function  */
+export const { getApiConfiguration, getGenres } = homeSlice.actions;
+
+export default homeSlice.reducer;
